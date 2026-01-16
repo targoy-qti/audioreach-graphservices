@@ -25,7 +25,7 @@ jobs:
           head -n 100 pr.patch
 
       - name: Run copyright/license detector
-        uses: targoy/copyright-license-checker-action@test
+        uses: targoy-qti/copyright-license-checker-action@test
         with:
           patch_file: pr.patch
           repo_name: ${{ github.repository }}
